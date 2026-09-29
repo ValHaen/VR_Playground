@@ -1,0 +1,34 @@
+{
+    "name": "BButton",
+    "maps": [
+        {
+            "name": "RightHand",
+            "id": "9cc9489b-b546-4ebe-902a-44eb90f6387a",
+            "actions": [
+                {
+                    "name": "BButton",
+                    "type": "Button",
+                    "id": "b171c4d2-dcf4-4239-99d3-f55ea350d39c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "77bf30ae-080b-41c3-b93f-930e06cb0e40",
+                    "path": "<XRController>{RightHand}/{SecondaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "BButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

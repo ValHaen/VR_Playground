@@ -1,0 +1,1448 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9131024109934946925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music
+  Guid:
+    Data1: -1785577744
+    Data2: 1095547498
+    Data3: -1322304328
+    Data4: 1954631426
+  Banks:
+  - {fileID: -6343219541313607606}
+  - {fileID: 8837553491193381356}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 306465
+--- !u!114 &-8935678171552866213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/hihat1
+  m_EditorClassIdentifier: 
+  Path: event:/hihat1
+  Guid:
+    Data1: 2034557365
+    Data2: 1075873539
+    Data3: 792458667
+    Data4: 180700976
+  Banks:
+  - {fileID: -6343219541313607606}
+  - {fileID: 8837553491193381356}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -4577737907077588705}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-8135910050011681874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GuitarMoll
+  m_EditorClassIdentifier: 
+  Path: event:/GuitarMoll
+  Guid:
+    Data1: 1329737953
+    Data2: 1185403965
+    Data3: -608063313
+    Data4: 231502862
+  Banks:
+  - {fileID: -6343219541313607606}
+  - {fileID: 8837553491193381356}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -1299770190369127146}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6728236101758870904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sO6/Detune
+  m_EditorClassIdentifier: 
+  Name: Detune
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0.505
+  ID:
+    data1: 3521109146
+    data2: 3799937789
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-6343219541313607606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD Banks/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 639165245120000000
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-6032255328179511695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sO6/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 80219934
+    data2: 325354627
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-5708866933987735534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sO1/Detune
+  m_EditorClassIdentifier: 
+  Name: Detune
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0.505
+  ID:
+    data1: 3521109146
+    data2: 3799937789
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-4577737907077588705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/hihat1/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 80219934
+    data2: 325354627
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-4408594360123996253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sO4
+  m_EditorClassIdentifier: 
+  Path: event:/sO4
+  Guid:
+    Data1: 724723810
+    Data2: 1196687516
+    Data3: 161354170
+    Data4: 240682185
+  Banks:
+  - {fileID: -6343219541313607606}
+  - {fileID: 8837553491193381356}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -3457729608824956564}
+  - {fileID: -2148956856545045301}
+  - {fileID: -777102479480998674}
+  MinDistance: 0
+  MaxDistance: 5
+  Length: 7200
+--- !u!114 &-3564291270311451794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sO1/Lowpass
+  m_EditorClassIdentifier: 
+  Name: Lowpass
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 1029624528
+    data2: 1812398288
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-3457729608824956564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sO4/Detune
+  m_EditorClassIdentifier: 
+  Name: Detune
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0.505
+  ID:
+    data1: 3521109146
+    data2: 3799937789
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-3402868083953649374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/hihat2
+  m_EditorClassIdentifier: 
+  Path: event:/hihat2
+  Guid:
+    Data1: -244506685
+    Data2: 1220499884
+    Data3: -1972950849
+    Data4: 1980524097
+  Banks:
+  - {fileID: -6343219541313607606}
+  - {fileID: 8837553491193381356}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -1014098929045941936}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-3072167040396529860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/GuitarDur/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 80219934
+    data2: 325354627
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-2646742600948886050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/kick1
+  m_EditorClassIdentifier: 
+  Path: event:/kick1
+  Guid:
+    Data1: -1378381935
+    Data2: 1163446219
+    Data3: -325447500
+    Data4: -1613422144
+  Banks:
+  - {fileID: -6343219541313607606}
+  - {fileID: 8837553491193381356}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 1187770388377702624}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-2148956856545045301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sO4/Lowpass
+  m_EditorClassIdentifier: 
+  Name: Lowpass
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 1029624528
+    data2: 1812398288
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-1299770190369127146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/GuitarMoll/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 80219934
+    data2: 325354627
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-1014098929045941936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/hihat2/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 80219934
+    data2: 325354627
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-797354665065670941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sO2/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 80219934
+    data2: 325354627
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-777102479480998674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sO4/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 80219934
+    data2: 325354627
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-739813261158533438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ball Hit
+  m_EditorClassIdentifier: 
+  Path: event:/Ball Hit
+  Guid:
+    Data1: 518694238
+    Data2: 1324217606
+    Data3: -1499100521
+    Data4: -662868710
+  Banks:
+  - {fileID: -6343219541313607606}
+  - {fileID: 8837553491193381356}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 6715347896742393775}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-414797493826371578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PianoDurAkk
+  m_EditorClassIdentifier: 
+  Path: event:/PianoDurAkk
+  Guid:
+    Data1: -681932854
+    Data2: 1178838906
+    Data3: -1837969024
+    Data4: 1329903183
+  Banks:
+  - {fileID: -6343219541313607606}
+  - {fileID: 8837553491193381356}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 2197309203165982275}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-357935361493824348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PianoDur
+  m_EditorClassIdentifier: 
+  Path: event:/PianoDur
+  Guid:
+    Data1: -619383323
+    Data2: 1241506076
+    Data3: -727930493
+    Data4: 9409647
+  Banks:
+  - {fileID: -6343219541313607606}
+  - {fileID: 8837553491193381356}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 8214363112737942969}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-294075584776976715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PianoMoll
+  m_EditorClassIdentifier: 
+  Path: event:/PianoMoll
+  Guid:
+    Data1: -402750750
+    Data2: 1167659315
+    Data3: -1658842443
+    Data4: 1240689232
+  Banks:
+  - {fileID: -6343219541313607606}
+  - {fileID: 8837553491193381356}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 1961627938223963717}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-85586887712062394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sO5/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 80219934
+    data2: 325354627
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-54864757852613128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GuitarDur
+  m_EditorClassIdentifier: 
+  Path: event:/GuitarDur
+  Guid:
+    Data1: 1469895662
+    Data2: 1313521866
+    Data3: -984948847
+    Data4: 644106789
+  Banks:
+  - {fileID: -6343219541313607606}
+  - {fileID: 8837553491193381356}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -3072167040396529860}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 5003902239292496746}
+  - {fileID: -6343219541313607606}
+  - {fileID: 8837553491193381356}
+  EditorEvents:
+  - {fileID: 6292329777657805133}
+  - {fileID: 1045422422873044774}
+  - {fileID: 5633176515469613666}
+  - {fileID: -739813261158533438}
+  - {fileID: -2646742600948886050}
+  - {fileID: -8935678171552866213}
+  - {fileID: -3402868083953649374}
+  - {fileID: -414797493826371578}
+  - {fileID: -8135910050011681874}
+  - {fileID: -294075584776976715}
+  - {fileID: -357935361493824348}
+  - {fileID: -54864757852613128}
+  - {fileID: -9131024109934946925}
+  - {fileID: 452679589705899155}
+  - {fileID: 5884884760025487951}
+  - {fileID: -4408594360123996253}
+  - {fileID: 6028133515285034455}
+  - {fileID: 7757704063380001560}
+  - {fileID: 50695843948079162}
+  EditorParameters:
+  - {fileID: 54407544977319616}
+  MasterBanks:
+  - {fileID: -6343219541313607606}
+  - {fileID: 8837553491193381356}
+  StringsBanks:
+  - {fileID: 5003902239292496746}
+  cacheVersion: 131848
+  cacheTime: 639262075388978642
+  SerializableEventsDict:
+  - key: event:/PianoRand
+    index: 0
+  - key: event:/snare
+    index: 1
+  - key: event:/PianoMollAkk
+    index: 2
+  - key: event:/Ball Hit
+    index: 3
+  - key: event:/kick1
+    index: 4
+  - key: event:/hihat1
+    index: 5
+  - key: event:/hihat2
+    index: 6
+  - key: event:/PianoDurAkk
+    index: 7
+  - key: event:/GuitarMoll
+    index: 8
+  - key: event:/PianoMoll
+    index: 9
+  - key: event:/PianoDur
+    index: 10
+  - key: event:/GuitarDur
+    index: 11
+  - key: event:/Music
+    index: 12
+  - key: event:/sO6
+    index: 13
+  - key: event:/sO2
+    index: 14
+  - key: event:/sO4
+    index: 15
+  - key: event:/sO5
+    index: 16
+  - key: event:/sO1
+    index: 17
+  - key: event:/sO3
+    index: 18
+--- !u!114 &50695843948079162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sO3
+  m_EditorClassIdentifier: 
+  Path: event:/sO3
+  Guid:
+    Data1: 586489
+    Data2: 1274677822
+    Data3: 579154081
+    Data4: -1005178129
+  Banks:
+  - {fileID: -6343219541313607606}
+  - {fileID: 8837553491193381356}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 4226300224016294838}
+  - {fileID: 8837840831152447356}
+  - {fileID: 2922013820608854413}
+  MinDistance: 0
+  MaxDistance: 5
+  Length: 5000
+--- !u!114 &54407544977319616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: parameter:/Reverb
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 80219934
+    data2: 325354627
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &106766322642972519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PianoRand/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 80219934
+    data2: 325354627
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &369968412736371673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sO2/Detune
+  m_EditorClassIdentifier: 
+  Name: Detune
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0.505
+  ID:
+    data1: 3521109146
+    data2: 3799937789
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &452679589705899155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sO6
+  m_EditorClassIdentifier: 
+  Path: event:/sO6
+  Guid:
+    Data1: -783953339
+    Data2: 1327491252
+    Data3: -1061428808
+    Data4: -1375581511
+  Banks:
+  - {fileID: -6343219541313607606}
+  - {fileID: 8837553491193381356}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -6728236101758870904}
+  - {fileID: 4637019173934826297}
+  - {fileID: -6032255328179511695}
+  MinDistance: 0
+  MaxDistance: 5
+  Length: 17600
+--- !u!114 &711804149325255883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sO5/Lowpass
+  m_EditorClassIdentifier: 
+  Name: Lowpass
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 1029624528
+    data2: 1812398288
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &875117091224719847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/snare/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 80219934
+    data2: 325354627
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &1045422422873044774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/snare
+  m_EditorClassIdentifier: 
+  Path: event:/snare
+  Guid:
+    Data1: 2028968201
+    Data2: 1111960364
+    Data3: -805206877
+    Data4: 1945004084
+  Banks:
+  - {fileID: -6343219541313607606}
+  - {fileID: 8837553491193381356}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 875117091224719847}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &1187770388377702624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/kick1/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 80219934
+    data2: 325354627
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &1707155663004736559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PianoMollAkk/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 80219934
+    data2: 325354627
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &1961627938223963717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PianoMoll/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 80219934
+    data2: 325354627
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &2196971929234887553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sO1/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 80219934
+    data2: 325354627
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &2197309203165982275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PianoDurAkk/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 80219934
+    data2: 325354627
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &2922013820608854413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sO3/Detune
+  m_EditorClassIdentifier: 
+  Name: Detune
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0.505
+  ID:
+    data1: 3521109146
+    data2: 3799937789
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &4226300224016294838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sO3/Lowpass
+  m_EditorClassIdentifier: 
+  Name: Lowpass
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 1029624528
+    data2: 1812398288
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &4637019173934826297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sO6/Lowpass
+  m_EditorClassIdentifier: 
+  Name: Lowpass
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 1029624528
+    data2: 1812398288
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &5003902239292496746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD Banks/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 639165245120000000
+  FileSizes:
+  - Name: 
+    Value: 1620
+  Exists: 1
+--- !u!114 &5427232260321875082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sO5/Detune
+  m_EditorClassIdentifier: 
+  Name: Detune
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0.505
+  ID:
+    data1: 3521109146
+    data2: 3799937789
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &5633176515469613666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PianoMollAkk
+  m_EditorClassIdentifier: 
+  Path: event:/PianoMollAkk
+  Guid:
+    Data1: 1605750834
+    Data2: 1076572508
+    Data3: 81532331
+    Data4: 2077637910
+  Banks:
+  - {fileID: -6343219541313607606}
+  - {fileID: 8837553491193381356}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 1707155663004736559}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5884884760025487951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sO2
+  m_EditorClassIdentifier: 
+  Path: event:/sO2
+  Guid:
+    Data1: 1381592134
+    Data2: 1274218843
+    Data3: 2051887758
+    Data4: 430642507
+  Banks:
+  - {fileID: -6343219541313607606}
+  - {fileID: 8837553491193381356}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 369968412736371673}
+  - {fileID: 9048063958884154583}
+  - {fileID: -797354665065670941}
+  MinDistance: 0
+  MaxDistance: 5
+  Length: 14000
+--- !u!114 &6028133515285034455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sO5
+  m_EditorClassIdentifier: 
+  Path: event:/sO5
+  Guid:
+    Data1: -1325236117
+    Data2: 1149319937
+    Data3: -221999456
+    Data4: 2022672774
+  Banks:
+  - {fileID: -6343219541313607606}
+  - {fileID: 8837553491193381356}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 5427232260321875082}
+  - {fileID: 711804149325255883}
+  - {fileID: -85586887712062394}
+  MinDistance: 0
+  MaxDistance: 5
+  Length: 15000
+--- !u!114 &6292329777657805133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PianoRand
+  m_EditorClassIdentifier: 
+  Path: event:/PianoRand
+  Guid:
+    Data1: -1138396664
+    Data2: 1199899601
+    Data3: -1132863574
+    Data4: 1029412576
+  Banks:
+  - {fileID: -6343219541313607606}
+  - {fileID: 8837553491193381356}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 106766322642972519}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6715347896742393775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ball Hit/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 80219934
+    data2: 325354627
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &7757704063380001560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sO1
+  m_EditorClassIdentifier: 
+  Path: event:/sO1
+  Guid:
+    Data1: -279080790
+    Data2: 1218538477
+    Data3: -1691438945
+    Data4: 970790797
+  Banks:
+  - {fileID: -6343219541313607606}
+  - {fileID: 8837553491193381356}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 2196971929234887553}
+  - {fileID: -3564291270311451794}
+  - {fileID: -5708866933987735534}
+  MinDistance: 0
+  MaxDistance: 5
+  Length: 8994
+--- !u!114 &8214363112737942969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/PianoDur/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 80219934
+    data2: 325354627
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &8837553491193381356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD Banks/Desktop/Desktop/Master.bank
+  Name: Desktop/Master
+  StudioPath: bank:/Master
+  lastModified: 639262075388943474
+  FileSizes: []
+  Exists: 1
+--- !u!114 &8837840831152447356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sO3/Reverb
+  m_EditorClassIdentifier: 
+  Name: Reverb
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 80219934
+    data2: 325354627
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &9048063958884154583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/sO2/Lowpass
+  m_EditorClassIdentifier: 
+  Name: Lowpass
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 1029624528
+    data2: 1812398288
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1

@@ -1,0 +1,34 @@
+{
+    "name": "YButton",
+    "maps": [
+        {
+            "name": "Left Hand",
+            "id": "a21a17ff-60b2-4f98-acd7-d8fc714fa616",
+            "actions": [
+                {
+                    "name": "a Button",
+                    "type": "Button",
+                    "id": "65dbcf37-c090-477c-a022-90a4f2704df2",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "6dccf05b-a587-4ae8-acb9-ab55e224afa6",
+                    "path": "<XRController>{LeftHand}/{PrimaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "a Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
