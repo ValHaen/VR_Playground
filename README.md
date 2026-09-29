@@ -15,9 +15,7 @@ Developed by Valentin Händler and supervised by Prof. Norbert Schnell
 
 ## Features
 
-| VR Gameplay | Hand Tracking & Interaktion |
-| :---: | :---: |
-| ![Gameplay Screenshot](docs/images/screenshot-gameplay.png) | ![Hand Tracking Demo](docs/images/demo.gif) |
+![Hand Tracking Demo](docs/Gameplay.gif) 
 
 - 🎮 **XR Interaction Toolkit 3.x:** Vollständig integriertes Interaktionssystem für VR-Controller.
 - 🖐️ **Hand Tracking & Gesture Support:** Unterstützung für direkte Handinteraktionen.
