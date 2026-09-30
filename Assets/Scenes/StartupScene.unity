@@ -201,12 +201,12 @@ MonoBehaviour:
   m_MaxEmissionRate: 80
   m_AmbientEvent:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
-  m_IntensityParameter: 
+      Data1: -271432038
+      Data2: 1249157733
+      Data3: -620917598
+      Data4: -1788286691
+    Path: event:/Proximity Sound
+  m_IntensityParameter: EQSpace
 --- !u!1001 &235886426
 PrefabInstance:
   m_ObjectHideFlags: 0
