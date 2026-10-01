@@ -51,7 +51,7 @@ Please make sure you have all needed versions installed:
    - The project will probably start in `Safe Mode`, because of the missing assets
    - Navigate to **Window** -> **Package Manager** 
    - Install all named Assets in the `Prerequisites` section 
-   - When play testing make sure to start in the "StartupScene", because there all VR Assets will be loaded
+   - When play testing make sure to start in the `StartupScene`, because there all VR Assets will be loaded
 
 ---
 

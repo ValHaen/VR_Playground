@@ -6470,6 +6470,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4920724473326203485, guid: 77ac6b10722bcca4a8baf70e44d89e78, type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5153920162707639830, guid: 77ac6b10722bcca4a8baf70e44d89e78, type: 3}
       propertyPath: m_Unparent
       value: 0
