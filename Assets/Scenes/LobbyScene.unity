@@ -964,11 +964,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3128732801114144537, guid: d465faf97be16c141add6a2a0e79787c, type: 3}
       propertyPath: m_sceneNames.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3128732801114144537, guid: d465faf97be16c141add6a2a0e79787c, type: 3}
       propertyPath: 'm_sceneNames.Array.data[0]'
-      value: BasicScene
+      value: MainSzene2
       objectReference: {fileID: 0}
     - target: {fileID: 3128732801114144537, guid: d465faf97be16c141add6a2a0e79787c, type: 3}
       propertyPath: 'm_sceneNames.Array.data[1]'
@@ -4136,7 +4136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5539036041990529523, guid: 95bd29654e15ad844be6210374a75967, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5557648633764868665, guid: 95bd29654e15ad844be6210374a75967, type: 3}
       propertyPath: m_SizeDelta.x

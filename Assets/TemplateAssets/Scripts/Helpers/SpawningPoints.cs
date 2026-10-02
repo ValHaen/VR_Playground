@@ -37,7 +37,10 @@ namespace XRMultiplayer
 
                 spawnPoint.transform.localPosition = localPosition;
                 spawnPoint.transform.GetComponentInChildren<TextMeshProUGUI>().text = (i + 1).ToString();
-                spawnPoint.transform.LookAt(spawnPointPrefab.transform.position);
+                spawnPoint.transform.LookAt(new Vector3(
+                                            spawnPointPrefab.transform.position.x,
+                                            spawnPoint.transform.position.y,
+                                            spawnPointPrefab.transform.position.z));
 
                 spawnPoint.name = $"SpawnPoint_{i + 1}";
             }

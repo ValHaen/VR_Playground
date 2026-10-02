@@ -1,21 +1,11 @@
-using UnityEngine;
-using Unity.Netcode;
-using FMODUnity;
 using FMOD.Studio;
+using FMODUnity;
+using System.Diagnostics;
+using Unity.Netcode;
+using UnityEngine;
 
 namespace XRMultiplayer
 {
-    /// <summary>
-    /// Misst den Abstand zwischen zwei Spielern.
-    /// Je näher sie kommen: mehr Funken + lauteres FMOD Ambient.
-    /// 
-    /// SETUP:
-    /// 1. Leeres GameObject in der Spielszene erstellen: "ProximityManager"
-    /// 2. NetworkObject Component drauf
-    /// 3. Dieses Script drauf
-    /// 4. ParticleSystem für Funken erstellen und im Inspector zuweisen
-    /// 5. FMOD Event Pfad für Ambient eintragen
-    /// </summary>
     public class PlayerProximityEffect : NetworkBehaviour
     {
         [Header("Abstands-Einstellungen")]
@@ -39,27 +29,29 @@ namespace XRMultiplayer
         [SerializeField, Tooltip("FMOD Parameter Name für die Lautstärke/Intensität")]
         string m_IntensityParameter = "Intensity";
 
-        // NetworkVariable: Owner schreibt Intensität, alle lesen
+        // Server schreibt, alle lesen
         NetworkVariable<float> m_NetIntensity = new NetworkVariable<float>(
             0f,
             NetworkVariableReadPermission.Everyone,
-            NetworkVariableWritePermission.Owner
+            NetworkVariableWritePermission.Server
         );
 
-        // NetworkVariable: Mittelpunkt zwischen den Spielern (für Partikel-Position)
         NetworkVariable<Vector3> m_NetMidpoint = new NetworkVariable<Vector3>(
             Vector3.zero,
             NetworkVariableReadPermission.Everyone,
-            NetworkVariableWritePermission.Owner
+            NetworkVariableWritePermission.Server
         );
 
-        // Lokale FMOD Instanz
         EventInstance m_AmbientInstance;
         bool m_AmbientPlaying = false;
 
-        // Update-Rate
-        float m_UpdateInterval = 0.05f;
+        float m_UpdateInterval = 0.016f; // ~60x pro Sekunde
         float m_LastUpdateTime = 0f;
+
+        // Gecachte Spielerliste — nicht jeden Frame neu suchen
+        XRINetworkPlayer[] m_CachedPlayers = new XRINetworkPlayer[0];
+        float m_PlayerCacheInterval = 2f; // alle 2 Sekunden neu suchen
+        float m_LastPlayerCacheTime = 0f;
 
         // ── Lifecycle ─────────────────────────────────────────────
 
@@ -70,23 +62,30 @@ namespace XRMultiplayer
             m_NetIntensity.OnValueChanged += OnIntensityChanged;
             m_NetMidpoint.OnValueChanged += OnMidpointChanged;
 
-            // Partikel initial stoppen
             if (m_SparkParticles != null)
+            {
+                // World Space: Partikel bleiben im Raum, fliegen nicht mit
+                var main = m_SparkParticles.main;
+                main.simulationSpace = ParticleSystemSimulationSpace.World;
                 m_SparkParticles.Stop();
+            }
         }
 
         public override void OnNetworkDespawn()
         {
             m_NetIntensity.OnValueChanged -= OnIntensityChanged;
             m_NetMidpoint.OnValueChanged -= OnMidpointChanged;
-
             StopAmbient();
             base.OnNetworkDespawn();
         }
 
         void Update()
         {
-            // Nur der Host berechnet den Abstand (hat Zugriff auf alle Spieler)
+            // Alle Clients: Partikel-Position jeden Frame direkt setzen
+            if (m_SparkParticles != null && m_NetIntensity.Value > 0f)
+                m_SparkParticles.transform.position = m_NetMidpoint.Value;
+
+            // Nur Host berechnet Abstand
             if (!IsHost) return;
             if (Time.time - m_LastUpdateTime < m_UpdateInterval) return;
             m_LastUpdateTime = Time.time;
@@ -98,18 +97,22 @@ namespace XRMultiplayer
 
         void CalculateProximity()
         {
-            // Alle verbundenen Spieler finden
-            var players = FindObjectsByType<XRINetworkPlayer>(FindObjectsSortMode.None);
+            // Spielerliste nur alle 2 Sekunden neu laden statt jeden Frame
+            if (Time.time - m_LastPlayerCacheTime > m_PlayerCacheInterval)
+            {
+                m_CachedPlayers = FindObjectsByType<XRINetworkPlayer>(FindObjectsSortMode.None);
+                m_LastPlayerCacheTime = Time.time;
+            }
+
+            var players = m_CachedPlayers;
 
             if (players.Length < 2)
             {
-                // Weniger als 2 Spieler — Effekt aus
                 if (m_NetIntensity.Value > 0f)
                     m_NetIntensity.Value = 0f;
                 return;
             }
 
-            // Nächstes Spielerpaar finden (bei mehr als 2 Spielern)
             float closestDistance = float.MaxValue;
             Vector3 midpoint = Vector3.zero;
 
@@ -117,54 +120,47 @@ namespace XRMultiplayer
             {
                 for (int j = i + 1; j < players.Length; j++)
                 {
-                    float dist = Vector3.Distance(
-                        players[i].transform.position,
-                        players[j].transform.position
-                    );
+                    // Kopf-Position für genaueres Tracking
+                    Vector3 posA = players[i].head != null
+                        ? players[i].head.position
+                        : players[i].transform.position;
+                    Vector3 posB = players[j].head != null
+                        ? players[j].head.position
+                        : players[j].transform.position;
+
+                    float dist = Vector3.Distance(posA, posB);
 
                     if (dist < closestDistance)
                     {
                         closestDistance = dist;
-                        midpoint = (players[i].transform.position + players[j].transform.position) / 2f;
+                        midpoint = (posA + posB) / 2f;
                     }
                 }
             }
 
-            // Intensität berechnen: 0 = weit weg, 1 = ganz nah
             float intensity = 0f;
             if (closestDistance <= m_MaxDistance)
-            {
-                intensity = Mathf.InverseLerp(m_MaxDistance, m_MinDistance, closestDistance);
-                intensity = Mathf.Clamp01(intensity);
-            }
+                intensity = Mathf.Clamp01(Mathf.InverseLerp(m_MaxDistance, m_MinDistance, closestDistance));
 
-            // Ans Netzwerk schicken
             m_NetIntensity.Value = intensity;
-            if (intensity > 0f)
-                m_NetMidpoint.Value = midpoint;
+            m_NetMidpoint.Value = midpoint; // immer updaten, nicht nur wenn > 0
         }
 
-        // ── Callbacks: auf allen Clients ─────────────────────────
+        // ── Callbacks ────────────────────────────────────────────
 
         void OnIntensityChanged(float previous, float current)
         {
-            ApplyEffects(current);
+            ApplyParticleEffect(current);
+            ApplyFMODEffect(current);
         }
 
         void OnMidpointChanged(Vector3 previous, Vector3 current)
         {
-            // Partikel-Position zwischen den Spielern updaten
             if (m_SparkParticles != null)
                 m_SparkParticles.transform.position = current;
         }
 
-        void ApplyEffects(float intensity)
-        {
-            ApplyParticleEffect(intensity);
-            ApplyFMODEffect(intensity);
-        }
-
-        // ── Funken Partikel ───────────────────────────────────────
+        // ── Partikel ─────────────────────────────────────────────
 
         void ApplyParticleEffect(float intensity)
         {
@@ -177,7 +173,6 @@ namespace XRMultiplayer
                 return;
             }
 
-            // Emission Rate basierend auf Intensität
             var emission = m_SparkParticles.emission;
             emission.rateOverTime = intensity * m_MaxEmissionRate;
 
@@ -185,7 +180,7 @@ namespace XRMultiplayer
                 m_SparkParticles.Play();
         }
 
-        // ── FMOD Ambient ──────────────────────────────────────────
+        // ── FMOD ─────────────────────────────────────────────────
 
         void ApplyFMODEffect(float intensity)
         {
@@ -197,11 +192,9 @@ namespace XRMultiplayer
                 return;
             }
 
-            // Ambient starten falls noch nicht läuft
             if (!m_AmbientPlaying)
                 StartAmbient();
 
-            // Intensitäts-Parameter setzen
             if (m_AmbientInstance.isValid())
                 m_AmbientInstance.setParameterByName(m_IntensityParameter, intensity);
         }

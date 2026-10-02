@@ -4,7 +4,19 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/StartupScene.unity
+    guid: 64002d7c5660c35458dc37762efab3ab
+  - enabled: 1
+    path: Assets/Scenes/LobbyScene.unity
+    guid: 13f6f87036926f94ab0417ca1b31725c
+  - enabled: 1
+    path: Assets/Scenes/MainSzene2.unity
+    guid: 4136ee5bd4db8d044bbc956aceb5ce11
   m_configObjects:
+    ByteDance.PICO.XR.Settings: {fileID: 11400000, guid: 70bcbc35dbab7aa48ae621882613c585, type: 2}
+    Unity.XR.PICO.LivePreview.Settings: {fileID: 11400000, guid: 9e0c2629f3339224781b24d90ac188a7, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e3aee76b9372917449aef639e2f74814, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 87b413c5a910b15498a98200731b1754, type: 2}
   m_UseUCBPForAssetBundles: 0

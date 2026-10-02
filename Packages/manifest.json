@@ -1,11 +1,14 @@
 {
   "dependencies": {
+    "com.bytedance.pico.xr": "file:C:/Users/haend/Downloads/PICO-Unity-SDK-6.1.1-20260903/XR",
     "com.unity.multiplayer.center": "1.0.0",
     "com.unity.netcode.gameobjects": "2.4.4",
+    "com.unity.pico.livepreview": "file:C:/Users/haend/Downloads/Unity Live Preview Plugin-1.0.5-20250211",
     "com.unity.render-pipelines.universal": "17.1.0",
     "com.unity.shadergraph": "17.1.0",
     "com.unity.xr.hands": "1.5.1",
     "com.unity.xr.interaction.toolkit": "3.1.3",
+    "com.unity.xr.openxr": "1.15.1",
     "com.unity.modules.accessibility": "1.0.0",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",

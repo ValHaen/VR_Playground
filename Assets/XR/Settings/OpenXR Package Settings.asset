@@ -416,7 +416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enabled: 1
   nameUi: OpenXR Composition Layer Secure Content
-  version: 3.4.0
+  version: 6.1.1
   featureIdInternal: com.pico.openxr.feature.LayerSecureContent
   openxrExtensionStrings: XR_FB_composition_layer_secure_content
   company: PICO
@@ -636,6 +636,28 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+--- !u!114 &-3419554322659299414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fecf3fc55e2a6b4197cd4fe3f771066, type: 3}
+  m_Name: FacialSimulationFeature Android
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: PICO Facial Simulation
+  version: 6.1.1
+  featureIdInternal: com.pico.openxr.feature.PICO_FacialSimulation
+  openxrExtensionStrings: XR_BD_facial_simulation
+  company: PICO
+  priority: 0
+  required: 0
+  enableFaceTrackingPermission: 1
+  enableRecordAudioPermission: 0
 --- !u!114 &-3297618861061668261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -730,7 +752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5019471fb2174e5c852ecd4047163007, type: 3}
   m_Name: HandInteractionProfile Android
   m_EditorClassIdentifier: 
-  m_enabled: 0
+  m_enabled: 1
   nameUi: Hand Interaction Profile
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.handinteraction
@@ -1032,7 +1054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enabled: 1
   nameUi: OpenXR Foveation
-  version: 3.4.0
+  version: 6.1.1
   featureIdInternal: com.pico.openxr.feature.foveation
   openxrExtensionStrings: 'XR_FB_foveation XR_FB_foveation_configuration XR_FB_foveation_vulkan
     XR_META_foveation_eye_tracked XR_META_vulkan_swapchain_create_info XR_FB_swapchain_update_state '
@@ -1499,7 +1521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enabled: 1
   nameUi: OpenXR Display Refresh Rate
-  version: 3.4.0
+  version: 6.1.1
   featureIdInternal: com.pico.openxr.feature.refreshrate
   openxrExtensionStrings: XR_FB_display_refresh_rate
   company: PICO
@@ -1519,7 +1541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enabled: 1
   nameUi: PICO OpenXR Features
-  version: 3.4.0
+  version: 6.1.1
   featureIdInternal: com.unity.openxr.pico.features
   openxrExtensionStrings: 'XR_FB_composition_layer_alpha_blend XR_FB_triangle_mesh
     XR_KHR_composition_layer_color_scale_bias XR_KHR_composition_layer_cylinder XR_KHR_composition_layer_equirect2
@@ -1529,6 +1551,7 @@ MonoBehaviour:
   company: PICO
   priority: 100
   required: 0
+  ApplyFlipYToAndroidSurface: 0
 --- !u!114 &2659854414051142968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1565,7 +1588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enabled: 1
   nameUi: PICO XR Support
-  version: 3.4.0
+  version: 6.1.1
   featureIdInternal: com.unity.openxr.feature.pico
   openxrExtensionStrings: XR_PICO_controller_interaction XR_PICO_view_state
   company: PICO
@@ -1629,6 +1652,7 @@ MonoBehaviour:
   - {fileID: 5584591474228591239}
   - {fileID: 5580952549043511711}
   - {fileID: 6558148982626272085}
+  - {fileID: -3419554322659299414}
   - {fileID: -469159278801715116}
   - {fileID: -7305139160321729301}
   - {fileID: 8323153141514891002}
@@ -1890,7 +1914,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enabled: 1
   nameUi: OpenXR Passthrough
-  version: 3.4.0
+  version: 6.1.1
   featureIdInternal: com.pico.openxr.feature.passthrough
   openxrExtensionStrings: XR_FB_passthrough
   company: PICO
@@ -2046,7 +2070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enabled: 1
   nameUi: PICO Body Tracking
-  version: 3.4.0
+  version: 6.1.1
   featureIdInternal: com.pico.openxr.feature.PICO_BodyTracking
   openxrExtensionStrings: XR_BD_body_tracking XR_PICO_body_tracking2
   company: PICO
